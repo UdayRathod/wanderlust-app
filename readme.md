@@ -27,7 +27,8 @@ A containerized Flask web application showcasing travel destinations, hotels, an
 
 ```bash
 git clone https://github.com/UdayRathod/wanderlust-app.git
-cd wanderlust-app
+cd wanderlust-app 
+```
 
 ### To run the app locally without Docker:
 
@@ -36,6 +37,15 @@ pip install -r requirements.txt
 
 ### Run the Flask app
 python app.py
+
+
+### To run with Docker
+
+```bash
+docker build -t wanderlust-app .
+docker run -p 5000:5000 wanderlust-app
+```
+
 
 ### Project Structure
 
@@ -47,3 +57,16 @@ python app.py
 ├── static/                 # CSS, JS, images
 ├── Dockerfile              # Docker multi-stage build
 └── README.md
+
+
+## Contributing
+
+Contributions are welcome!  
+To contribute, please fork the repository, create a new branch for your feature or bugfix, and submit a pull request.  
+For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
