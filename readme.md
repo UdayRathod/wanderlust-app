@@ -46,9 +46,9 @@ docker build -t wanderlust-app .
 docker run -p 5000:5000 wanderlust-app
 ```
 
-
 ### Project Structure
 
+```
 /wanderlust-docker-app
 │
 ├── app.py                  # Main Flask application
@@ -57,7 +57,7 @@ docker run -p 5000:5000 wanderlust-app
 ├── static/                 # CSS, JS, images
 ├── Dockerfile              # Docker multi-stage build
 └── README.md
-
+```
 
 ## Contributing
 
